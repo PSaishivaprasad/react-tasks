@@ -1,0 +1,93 @@
+.router-links {
+  width: 235px;
+  min-width: 235px;
+  height: auto;
+  background: #f8f8f8;
+}
+.header-router-links {
+  padding: 5px 0px 0px 20px;
+}
+.sidebar-main {
+  display: flex;
+}
+.link-box {
+  padding: 0px 0px 0px 5px;
+}
+.link-details {
+  text-decoration: none;
+  display: flex;
+  color: #4a4a4a;
+  font-weight: bold;
+  font-family: Nunito Sans !important;
+  cursor: pointer;
+}
+.main-header-color {
+  color: #4a4a4a;
+  font-family: "Nunito Sans" !important;
+}
+.link-details-box {
+  text-decoration: none;
+  display: flex;
+  font-weight: bold;
+  font-family: Nunito Sans !important;
+  cursor: pointer;
+}
+.router-component {
+  flex: 1;
+}
+/* sid nav */
+.sub-menu-display {
+  display: grid !important;
+}
+.sub-menu-color {
+  color: #2e6a9b !important;
+}
+.sub-menu {
+  justify-content: left;
+  padding: 5px 0px 0px 15px;
+  font-size: 0.95em;
+}
+.sub-sub-menu {
+  padding: 3px 15px;
+  display: none;
+}
+.sub-menu {
+  justify-content: left;
+  padding: 5px 0px 0px 15px;
+  font-size: 0.95em;
+}
+.sub-sub-menu {
+  padding: 3px 15px;
+  display: none;
+}
+.sidebar-nav-menu {
+  width: 100px;
+}
+.sidebar-nav-menu-item {
+  display: block;
+  color: #4a4a4a;
+  padding: 3px 0px;
+  font-size: 1em;
+}
+.sidebar-nav-menu-item-body {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+}
+.sidebar-nav-menu-item.item-active .sidebar-nav-menu-item-body {
+  height: auto;
+  opacity: 1;
+  padding: 0px 0px 5px 0px;
+}
+.item-active {
+  color: #005192 !important;
+  transition: transform 0.5s ease-out;
+}
+.sidebar-nav-menu-item-head {
+  margin-bottom: 5px;
+  position: relative;
+}
+.sidebar-nav-menu-item-head:after {
+  position: absolute;
+  right: 12px;
+}

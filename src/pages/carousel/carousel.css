@@ -1,0 +1,10 @@
+.grade-box {
+  height: 100px;
+  border: 1px solid;
+  padding: 5px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}

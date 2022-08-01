@@ -2,19 +2,7 @@ import React, { useState } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 
 const Navbar = ({ history }) => {
-  const [isOpen, setOpen] = useState(false);
-
-  const isAuth = !!localStorage.getItem("token");
-
-  const loginUser = () => {
-    localStorage.setItem("token", "some-login-token");
-    history.push("/profile/Vijit");
-  };
-
-  const logoutUser = () => {
-    localStorage.removeItem("token");
-    history.push("/");
-  };
+  //   const [isOpen, setOpen] = useState(false);
 
   return (
     <nav
@@ -23,21 +11,7 @@ const Navbar = ({ history }) => {
       aria-label="main navigation"
     >
       <div className="container">
-        <div className="navbar-brand">
-          <a
-            role="button"
-            className={`navbar-burger burger ${isOpen && "is-active"}`}
-            aria-label="menu"
-            aria-expanded="false"
-            onClick={() => setOpen(!isOpen)}
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div className={`navbar-menu ${isOpen && "is-active"}`}>
+        <div>
           <div className="navbar-start">
             <NavLink
               className="navbar-item"
@@ -63,22 +37,13 @@ const Navbar = ({ history }) => {
             >
               Profile
             </NavLink>
-          </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                {!isAuth ? (
-                  <button className="button is-white" onClick={loginUser}>
-                    Log in
-                  </button>
-                ) : (
-                  <button className="button is-black" onClick={logoutUser}>
-                    Log out
-                  </button>
-                )}
-              </div>
-            </div>
+            <NavLink
+              className="navbar-item"
+              activeClassName="is-active"
+              to="/testing"
+            >
+              testing
+            </NavLink>
           </div>
         </div>
       </div>

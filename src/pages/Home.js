@@ -1,4 +1,5 @@
 import React from "react";
+import Child from "./child";
 
 const Home = () => (
   <div>
@@ -9,6 +10,8 @@ const Home = () => (
       nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
       lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
     </p>
+
+    <Child />
   </div>
 );
 
